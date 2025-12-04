@@ -1,0 +1,207 @@
+/* ============================
+   PALETA CORPORATIVA ABM
+   Azul oscuro: #0A2A43
+   Azul medio:  #154976
+   Celeste:     #3BA9F4
+   Gris claro:  #F5F7FA
+   Gris texto:  #333
+=============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    text-align: center;
+}
+
+body {
+    background: #F5F7FA;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ============================
+   HEADER / NAV
+=============================== */
+
+header {
+    background: #0A2A43;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #EAF3FF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #3BA9F4;
+}
+
+/* ============================
+   TITULOS GENERALES
+=============================== */
+
+h2 {
+  
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #0A2A43;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ============================
+   TARJETAS / CARD
+=============================== */
+
+.card {
+    background: white;
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+/* ============================
+   FORMULARIOS
+=============================== */
+
+form {
+    width: 90%;
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+label {
+    font-weight: 600;
+    color: #0A2A43;
+}
+
+input,
+textarea,
+select {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    outline: none;
+    transition: 0.2s;
+    background: white;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #3BA9F4;
+    box-shadow: 0 0 8px rgba(59,169,244,0.3);
+}
+
+textarea {
+    height: 140px;
+    resize: none;
+}
+
+/* ============================
+   BOTONES
+=============================== */
+
+button,
+.btn {
+    background: #154976;
+    color: white;
+    padding: 12px 25px;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover,
+.btn:hover {
+    background: #3BA9F4;
+    color: #0A2A43;
+}
+
+/* ============================
+   LISTAS
+=============================== */
+
+ul {
+    padding-left: 25px;
+    line-height: 1.7;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* ============================
+   FOOTER
+=============================== */
+
+footer {
+    background: #0A2A43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    font-size: 15px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
+}
+
+/* ============================
+   RESPONSIVE
+=============================== */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+.section-img {
+    width: 100%;
+    max-width: 700px;      /* tamaño máximo elegante */
+    display: block;
+    margin: 20px auto;     /* centra la imagen */
+    border-radius: 10px;   /* bordes redondeados profesionales */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);  /* sombra sutil */
+    object-fit: cover;     /* imagen proporcionada */
+}
